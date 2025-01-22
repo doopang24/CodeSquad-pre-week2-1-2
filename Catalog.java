@@ -24,4 +24,20 @@ public class Catalog {
         ArrayList<Book> arrayListB = new ArrayList<>(Arrays.asList(catalogB));
         arrayListB.add(new Book("사피엔스", "유발 하라리"));
         Book[] newCatalogB = arrayListB.toArray(new Book[0]);
+
+        System.out.println("A 목록");
+        for(Book book : catalogA) {
+            System.out.println("'" + book.title + "' (" + book.author + ")");
+        }
+        System.out.println();
+        System.out.println("A-1 목록");
+        for(Book book : catalogA_Copy) {
+            System.out.println("'" + book.title + "' (" + book.author + ")");
+        }
+        System.out.println();
+        System.out.println("B 목록");
+        for(Book book : newCatalogB) {
+            System.out.println("'" + book.title + "' (" + book.author + ")");
+        }
+    }
 }
